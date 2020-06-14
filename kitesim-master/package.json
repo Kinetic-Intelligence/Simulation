@@ -1,0 +1,29 @@
+{
+  "name": "kitesim",
+  "version": "1.0.0",
+  "description": "A Airborne wind energy system simulator writen in typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "web": "webpack",
+    "build": "tsc -p tsconfig_headless.json",
+    "headless": "node logger/src/programs/headless.js",
+    "multi": "node logger/src/programs/headlessMulti.js"
+  },
+  "author": "Andreas Okholm",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.16",
+    "@types/node": "^12.6.8",
+    "jest": "^24.8.0",
+    "three": "^0.106.2",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "csv-parse": "^4.6.5"
+  }
+}
